@@ -39,7 +39,7 @@ builder.Services.AddAuthentication(options =>
 
 var app = builder.Build();
 var configuration = builder.Configuration;
-string connectionString = "data source=ACER\\CYNOSUREDBS; Initial Catalog = SocialMediaProject; Integrated Security = true; TrustServerCertificate=true";
+string connectionString = "data source=HP\\MSSQLSERVER01; Initial Catalog = SocialMediaProject; Integrated Security = true; TrustServerCertificate=true";
 configuration["ConnectionStrings:CustomConnection"] = connectionString;
 
 // Configure the HTTP request pipeline.
